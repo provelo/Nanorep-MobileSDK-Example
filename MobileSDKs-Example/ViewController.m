@@ -28,11 +28,11 @@
 
 - (IBAction)callSearchSDK:(id)sender {
     AccountParams *account = [AccountParams new];
-    //    account.account = @"rbs";
-    //    account.knowledgeBase = @"KnowledgeBaseMobile";
-    account.account = @"gojek";
-    account.knowledgeBase = @"English";
-    account.nanorepContext = @{@"DeviceType": @"iOS"};
+    //    account.account = @"XXX";
+    //    account.knowledgeBase = @"XXX";
+    account.account = @"XXX";
+    account.knowledgeBase = @"XXX";
+    account.nanorepContext = @{@"DeviceType": @"XXX"};
     [[NanoRep shared] prepareWithAccountParams:account];
     [[NanoRep shared] setFetchConfiguration:^(NRConfiguration *configuration, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -43,9 +43,9 @@
 }
 - (IBAction)callConversationSDK:(id)sender {
     AccountParams *accountParams = [AccountParams new];
-    accountParams.account = @"workshop";
-    accountParams.knowledgeBase = @"Pablo";
-    accountParams.apiKey = @"8f8fd915-9ecf-4435-8b9e-0bda944aeca9";
+    accountParams.account = @"XXX";
+    accountParams.knowledgeBase = @"XXX";
+    accountParams.apiKey = @"XXX";
     NRBotConfiguration *botConfig = [NRBotConfiguration new];
     botConfig.chatContentURL = [NSURL URLWithString:@"https://cdn-customers.nanorep.com/MobileSDK/view-rbs.html"];
     //        botConfig.chatContentURL = URL.init(string: "http://localhost/ConversationalWebView/view-rbs.html")
