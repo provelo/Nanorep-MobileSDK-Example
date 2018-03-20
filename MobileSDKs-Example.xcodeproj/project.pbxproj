@@ -15,6 +15,8 @@
 		4AF2A3F92061468200053EDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2A3F82061468200053EDF /* main.m */; };
 		4AF2A4032061468200053EDF /* MobileSDKs_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2A4022061468200053EDF /* MobileSDKs_ExampleTests.m */; };
 		4AF2A40E2061468200053EDF /* MobileSDKs_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2A40D2061468200053EDF /* MobileSDKs_ExampleUITests.m */; };
+		4AF2A41C20614AC200053EDF /* NanorepUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF2A41B20614AC200053EDF /* NanorepUI.framework */; };
+		4AF2A41D20614AC200053EDF /* NanorepUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF2A41B20614AC200053EDF /* NanorepUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4AF2A41E20614AC200053EDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4AF2A41D20614AC200053EDF /* NanorepUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4AF2A3E62061468200053EDF /* MobileSDKs-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MobileSDKs-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF2A3E92061468200053EDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +67,7 @@
 		4AF2A4092061468200053EDF /* MobileSDKs-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MobileSDKs-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF2A40D2061468200053EDF /* MobileSDKs_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileSDKs_ExampleUITests.m; sourceTree = "<group>"; };
 		4AF2A40F2061468200053EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF2A41B20614AC200053EDF /* NanorepUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NanorepUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF2A41C20614AC200053EDF /* NanorepUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 		4AF2A3DD2061468200053EDF = {
 			isa = PBXGroup;
 			children = (
+				4AF2A41B20614AC200053EDF /* NanorepUI.framework */,
 				4AF2A3E82061468200053EDF /* MobileSDKs-Example */,
 				4AF2A4012061468200053EDF /* MobileSDKs-ExampleTests */,
 				4AF2A40C2061468200053EDF /* MobileSDKs-ExampleUITests */,
@@ -142,6 +161,7 @@
 				4AF2A3E22061468200053EDF /* Sources */,
 				4AF2A3E32061468200053EDF /* Frameworks */,
 				4AF2A3E42061468200053EDF /* Resources */,
+				4AF2A41E20614AC200053EDF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,6 +452,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VEB9CESSEB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "MobileSDKs-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pablorovelo.MobileSDKs-Example";
@@ -446,6 +470,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VEB9CESSEB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "MobileSDKs-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pablorovelo.MobileSDKs-Example";

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NanorepUI/NanorepUI.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
